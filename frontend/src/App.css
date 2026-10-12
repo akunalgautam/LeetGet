@@ -1,0 +1,153 @@
+.main-div {
+  background-color: red;
+}
+
+.nav-bar {
+  background-color: #ffd369;
+  font-family: "Jersey";
+}
+.nav-bar img {
+  height: 2rem;
+  padding: 0 1rem;
+}
+.nav-bar .nav-container {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.nav-links .link-login {
+  text-decoration: none;
+  color: #222831;
+  font-size: x-small;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-links .link-login:hover {
+  font-weight: 200;
+  color: rgb(206, 37, 10);
+}
+.nav-links .nav-greeting {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: #222831;
+}
+.nav-links .link-logout {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #222831;
+  font-size: x-small;
+  font-family: "Press Start 2P", system-ui;
+  padding: 0;
+}
+.nav-links .link-logout:hover {
+  color: rgb(206, 37, 10);
+}
+.nav-container .logo-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+.form-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
+  width: 70%;
+  margin-top: 0.5rem;
+}
+.form-container form .user-input {
+  /* margin: 0.5rem; */
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  background-color: #4e5155;
+  font-family: "Press Start 2P", system-ui;
+  color: white;
+  font-size: small;
+}
+.form-container form .user-input::placeholder {
+  color: #b0b0b0;
+  font-family: "Press Start 2P", system-ui;
+  font-size: x-small;
+  opacity: 0.5;
+}
+.form-container form .user-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffd369;
+  font-family: "Press Start 2P", system-ui;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.form-container form .user-button:hover {
+  opacity: 0.85;
+}
+.form-container form .user-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.app-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: min(1300px, calc(100% - 4rem));
+  margin: 1.5rem auto 1.5rem 3rem;
+}
+
+.app-layout .main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-layout .form-container,
+.app-layout .form-error {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 800px) {
+  .app-layout {
+    flex-direction: column;
+    width: min(1300px, calc(100% - 2rem));
+    margin: 1.5rem auto;
+  }
+}
+
+.route-loading {
+  text-align: center;
+  color: #eeeeee;
+  font-family: "Poppins", system-ui, sans-serif;
+  margin-top: 3rem;
+}
+
+.form-error {
+  margin-top: 1rem;
+  color: #ff6b6b;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 0.85rem;
+  text-align: center;
+}

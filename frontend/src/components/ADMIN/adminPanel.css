@@ -1,0 +1,142 @@
+.admin-panel {
+  width: min(900px, 92%);
+  margin: 2rem auto;
+  color: #eeeeee;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+.admin-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1rem;
+  color: #ffd369;
+  margin-bottom: 1.5rem;
+}
+
+.admin-status {
+  color: #a7a7a7;
+  font-size: 0.85rem;
+}
+
+.admin-error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+}
+
+.admin-table {
+  background: linear-gradient(180deg, #393e46 0%, #323841 100%);
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.admin-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.6fr 0.8fr 0.9fr 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.82rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+}
+.admin-row:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.admin-row:last-child {
+  border-bottom: none;
+}
+
+.admin-row-head {
+  cursor: default;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #a7a7a7;
+}
+.admin-row-head:hover {
+  background-color: transparent;
+}
+
+.admin-cell-user {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-cell-email,
+.admin-cell-date {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #cfcfcf;
+}
+
+.admin-badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  background-color: rgba(255, 211, 105, 0.15);
+  color: #ffd369;
+}
+.admin-badge-muted {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #cfcfcf;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.admin-action-btn {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: transparent;
+  color: #eeeeee;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.admin-action-btn:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.admin-action-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.admin-action-danger {
+  color: #ff6b6b;
+  border-color: rgba(255, 107, 107, 0.35);
+}
+
+.admin-friends-panel {
+  padding: 0.75rem 1.1rem 1rem 2.4rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.admin-friends-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: #dcdcdc;
+}
+
+@media (max-width: 700px) {
+  .admin-row {
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+  }
+  .admin-cell-date {
+    display: none;
+  }
+}
